@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    font-size: 32px;
+    list-style-type: none;
+    background-color: var(--cor-light-blue-100);
+    color: var(--cor-dark-blue-300);
+}
+
+:root {
+    --cor-dark-blue-300: #0A3871;
+    --cor-dark-blue-400: #052051;
+    --cor-light-blue-100: #F3F5FC;
+    --cor-gray-400: #495057;
+    --cor-gray-500: #343A40;
+
+    /* 
+    BG: GRAY E5E5E5 / white
+    BT: blue 300 com white / D8DFE8 com blue
+    TX: 0A3871 / gray 400 / gray 500 1x
+
+    fonte inter 32px / 24px / 16 px / 12px
+    regular / bold
+
+    */
+
+    --fonte-primaria: ; 
+    --fonte-secundaria: ;
+    --fonte-terciaria: ;
+}
+
+.cabecalho {
+    padding: 2%;
+}
+
+.container {
+    display: flex;
+    padding: 0 15% 0;
+    gap: 80px;
+}
+
+.container__textarea {
+    padding: 5%;
+    text-transform: lowercase;
+    /* border: none; */
+}
+
+.container__textarea:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: var(--cor-dark-blue-300);
+}
+
+.container__mensagem {
+    background-color: white;
+    background-image: url(/assets/img-body.svg);
+    background-repeat: no-repeat;
+    border-radius: 32px;
+    border: none;
+}
+
+main button {
+    border-radius: 24px;
+    cursor: pointer;
+    padding: 24px;
+}
+
+
+.rodape {
+    padding: 24px;
+    text-align: center;
+    background-color: var(--cor-dark-blue-300);
+    color: var(--cor-light-blue-100);
+    font-size: 12px;
+}

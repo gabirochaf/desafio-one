@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <img src="/assets/alura-logo.svg" alt="Logotipo da Alura.">
+        </nav>
+    </header>
+    
+    <main class="container">
+        <section>
+            <textarea class="container__textarea" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+            
+            <div class="container__observacao">
+                <p>Apenas letras minúsculas e sem acento.</p>
+                <img src="/assets/bi_exclamation-circle-fill.svg" alt="Ponto de exclamação">
+            </div>
+            <div class="container__botoes"> 
+                <button class="btn-encriptar">Criptografar</button>
+                <button class="btn-desencriptar">Descriptografar</button>
+            </div>
+        </section>
+
+        <section>
+            <textarea class="container__mensagem" cols="20" rows="30"></textarea>
+            <button class="btn-copiar">Copiar</button>
+            <p>Nenhuma mensagem encontrada</p>
+            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </section>
+        
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Gabriela Rocha.</p>
+    </footer>
+</body>
+</html>
