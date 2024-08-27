@@ -8,30 +8,35 @@
 </head>
 <body>
     <header class="cabecalho">
-        <nav class="cabecalho__menu">
+        <nav class="cabecalho_menu">
             <img src="/assets/alura-logo.svg" alt="Logotipo da Alura.">
         </nav>
     </header>
     
     <main class="container">
-        <section>
-            <textarea class="container__textarea" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
-            
-            <div class="container__observacao">
-                <p>Apenas letras minúsculas e sem acento.</p>
+
+        <section class="container_esquerdo">
+            <textarea class="container_esquerdo_input" placeholder="digite seu texto"></textarea>
+            <div class="container_esquerdo_obs">
                 <img src="/assets/bi_exclamation-circle-fill.svg" alt="Ponto de exclamação">
+                <p>Apenas letras minúsculas e sem acento.</p>
             </div>
-            <div class="container__botoes"> 
-                <button class="btn-encriptar">Criptografar</button>
-                <button class="btn-desencriptar">Descriptografar</button>
+            <div class="container_esquerdo_botoes"> 
+                <button class="btn_criptografar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="btn_descriptografar" onclick="btnDesencriptar()">Descriptografar</button>
             </div>
         </section>
 
-        <section>
-            <textarea class="container__mensagem" cols="20" rows="30"></textarea>
-            <button class="btn-copiar">Copiar</button>
-            <p>Nenhuma mensagem encontrada</p>
-            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        <section class="container_direito">
+            <textarea class="container_direito_output" id="output"></textarea>
+            <div id="infos">
+                <img src="/assets/img-body.svg">
+                <p class="container_direito_erro">Nenhuma mensagem encontrada</p>
+                <p class="container_direito_msg">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div class="container_direito_btn" id="copiar">
+                <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+            </div>
         </section>
         
     </main>
@@ -39,5 +44,7 @@
     <footer class="rodape">
         <p>Desenvolvido por Gabriela Rocha.</p>
     </footer>
+
+    <script src="/script.js"></script>
 </body>
 </html>
